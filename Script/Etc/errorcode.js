@@ -1,0 +1,31 @@
+// ErrorCode.js
+var ErrorCode = {}
+
+ 
+ErrorCode.NOT_ONLINE = 106
+ErrorCode.ACCOUNT_SEAL = 107
+
+ErrorCode.ROOM_NOT_FOUND = 201
+ErrorCode.ROOM_FULL = 202
+
+ErrorCode.GOLD_NOT_ENOUGH = 301
+ErrorCode.BANKER_NO_BET = 401
+ErrorCode.NOT_BANKER = 402
+ErrorCode.NOT_IN_QUEUE = 403
+ErrorCode.UR_BANKER = 404
+ErrorCode.HAS_IN_QUEUE = 405
+ErrorCode.TUIBING_ROOMCLOSE = 406
+ 
+ErrorCode.MAHJONG_ROOM_FULL = 501
+ErrorCode.MAHJONG_PLAYER_NOT_FOUND = 502
+ErrorCode.MAHJONG_MJ_NOT_FOUND = 503
+ErrorCode.MAHJONG_ERROR_COMMAND = 504
+
+// DB
+ErrorCode.DB_PLAYER_NOT_FOUND = 701
+// GM
+ErrorCode.PERMISSION_DENIED = 901
+ErrorCode.LOGTYPE_ERROR = 902
+
+
+module.exports = ErrorCode;
