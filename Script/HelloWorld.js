@@ -32,9 +32,19 @@ cc.Class({
         // console.log("sgsdgsdgds",dt);
     },
 
+    goToLogin:
+    function(event,data){
+        cc.log( localVal('test'));
+        loadPrefab("prefab/toogleTest",function(node){
+            
+            getRunningS().addChild(node);
+
+        });
+    },
+
     onLoad: function () {
 
-     
+        localVal('test',"++++++++++++++++++++++++++++++++");
         this.label.string = this.text2;
         cc.log("text2=  ",this.text2);
         cc.game.addPersistRootNode(this.node);
@@ -49,7 +59,7 @@ cc.Class({
         var self = this;
 
 
-
+        
 
         // net.initPb(function(){
             
@@ -64,6 +74,7 @@ cc.Class({
                     },
                     S2C_HostFailed:function(msg){
                         cc.log("msg",msg.errInfo);
+                        
                         net.reConnect( etc.ip, etc.port,function(){
                             net.sendMsg({ 
                                 C2S_Login : {
@@ -79,9 +90,11 @@ cc.Class({
                                     }
                                 },
                                 S2C_LoginSucc:function(msg){
+                           
                                     cc.log("S2C_LoginSuccmsg",msg.szUser.szUserName);
                                 },
                                 S2C_LoginFailed:function(msg){
+                                     
                                     cc.log("S2C_LoginFailedmsg",msg.szUser.szUserName);
                                 },
                                
@@ -137,6 +150,8 @@ cc.Class({
                 IS_SHARE:0,
                 FIRST_LAUNCH:0
             }; 
+
+            
 
             http.getWithValues(CHECK_UPD_URL,data,function(data) {
                 // cc.log("httpGetWithValues_data",data);

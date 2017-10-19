@@ -4,7 +4,7 @@ var SocketState = {
     Linked : 2,
     Close : 3,
 }
- 
+
 
 var lwebsocket = cc.Class({
     // extends: cc.Component,

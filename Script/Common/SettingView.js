@@ -10,7 +10,7 @@ var setting = cc.Class({
 		},
 		init : function(){
 			var self = this;
-			cc.loader.loadRes("profab/SettingLayer", function (err, prefab) {
+			cc.loader.loadRes("prefab/SettingLayer", function (err, prefab) {
 			    self.pfab = prefab;
 			});
 		},

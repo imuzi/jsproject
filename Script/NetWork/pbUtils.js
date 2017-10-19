@@ -60,7 +60,7 @@ module.exports = cc.Class({
         },
 
         
-
+        
         readBuffer:
         function(content){
             cc.log("gsdgsdgsdgsdggdgsdhsdhdj");

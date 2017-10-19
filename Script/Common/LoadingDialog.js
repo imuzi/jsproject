@@ -6,7 +6,7 @@ var Loading = cc.Class({
 		isInit : false,
 		init : function(){
 			var self = this;
-            cc.loader.loadRes("profab/LoadingLayer", function (err, prefab) {
+            cc.loader.loadRes("prefab/LoadingLayer", function (err, prefab) {
                 self.pfab = prefab;
                 self.isInit = true;
             });

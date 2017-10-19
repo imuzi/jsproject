@@ -9,7 +9,7 @@ var NoticeBox = cc.Class({
         pfab : null,
         init : function() {
             var self = this;
-            cc.loader.loadRes("profab/Notice", function (err, prefab) {
+            cc.loader.loadRes("prefab/Notice", function (err, prefab) {
                 self.pfab = prefab;
             });
         },
